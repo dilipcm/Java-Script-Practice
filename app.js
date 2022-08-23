@@ -1,0 +1,1 @@
+console.log("Push Js into git remote repository");
