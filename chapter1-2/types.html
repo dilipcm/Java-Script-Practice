@@ -64,8 +64,10 @@ x='string'
 console.log(typeof(x),'literal',x);
 
 //Symbol
-x=Symbol('Symbol Demo');
+x=Symbol();//no literal form
 console.log(typeof(x),'literal',x);
+
+console.log(Symbol()==Symbol());
 
 //object
 x={} //object literal syntax
@@ -87,6 +89,17 @@ console.log(x['address']['house no']);
 console.log(x['age']);
 
 
-//
+//boolean
+x=true
+y=false
+console.log(typeof(x),'literal',x);
+console.log(typeof(y),'literal',y);
+
+
+//null
+x=null;
+console.log(x,typeof x);//null 'object'
+
+
 </script>
 </head>
