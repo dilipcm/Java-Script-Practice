@@ -1,0 +1,63 @@
+<head>
+    <!-- for live reload head/body  -->
+<script>
+    /*Avavilable Datatypes
+      1.Number-int,float,octal,binary,hexadecimal
+      2.String
+      3.Symbol
+      4.Object
+      5.undefined
+      6.null
+      7.boolean
+      8.bigInt
+    */
+
+//    Number 
+
+let x=120;
+console.log(typeof(x),"literal",x);
+
+x=12.33;
+console.log(typeof(x),"literal",x);
+
+x=12.000000;
+console.log(typeof(x),"literal",x);
+
+
+x=.0000112;//valid but not recommended
+
+console.log(typeof(x),"literal",x);
+
+x=0x0F123;//to convert hex to decimal;
+console.log(typeof(x),"literal",x);
+
+x=0b01010111;
+console.log(typeof(x),'literal',x);
+
+x=0o0121342;
+console.log(typeof(x),'literal',x);
+
+
+//big int 
+x=122222222222222222222222222222222n;
+console.log(typeof(x),'literal',x);
+
+x=122222222222222222222222222222222111111111111111111111111111111111111111111111111111100000000000000000000000000000000000000000000000000000000000000;
+console.log(typeof(x),'literal',x);
+x=122222222222222222222222222222222111111111111111111111111111111111111111111111111111100000000000000000000000000000000000000000000000000000000000000n;
+console.log(typeof(x),'literal',x);
+
+//undefined
+x;
+console.log(x);
+
+let y;
+console.log(y);
+
+x=undefined;
+console.log(x);
+
+
+
+</script>
+</head>
