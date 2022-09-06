@@ -1,0 +1,30 @@
+<head>
+    <script>
+        //number to oct,hex,binary;
+        num=parseInt(prompt("Please Input the number"));
+        oct=num.toString(8);
+        bin=num.toString(2);
+        hex=num.toString(16);
+        document.write("<p>Number is </p>"+num)
+        document.write(`<p>octal=${oct}</p>
+                          <p>bin=${bin}</p>
+                          <p>hex=${hex}</>`);
+
+
+        //oct,hex,binary to decimal
+
+        document.write("<h3>Converting back to their Equivalent Decimal Values </h3>");
+
+        hex_to_dec=parseInt(hex,16);
+        bin_to_dec=parseInt(bin,2);
+        oct_to_dec=parseInt(oct,8);
+
+        document.write(`
+            <p>Decimal value of ${hex} is ${hex_to_dec}<p>
+            <p>Decimal value of ${bin} is ${bin_to_dec}</p>
+            <p>Decimal value of ${oct} is ${oct_to_dec}</p>`)
+
+        document.write("Square Root of "+" "+num+" is "+ (num**0.5));
+
+    </script>
+</head>

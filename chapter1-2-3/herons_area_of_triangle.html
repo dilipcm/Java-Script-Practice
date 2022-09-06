@@ -1,0 +1,29 @@
+<head>
+    <script>
+        /*Heron's formula
+        area=sqrt(S(S-a)(S-b)(S-c))
+        where,
+        a,b,c are the sides
+        S=(a+b+c)/2;
+        sqrt(x)=>x**1/2 or pow(x,1/2);
+
+        */
+
+        a=parseInt(prompt("Enter the first side of triangle"));
+        b=parseInt(prompt("Enter the second side of the triangle"));
+        c=parseInt(prompt("Enter the third side of the triangle"));
+        //make sure to accept values as integers
+        document.write(`type of a,b, and c are ${typeof a},${typeof b} and ${typeof c}`);
+        document.write(`<p>
+            Input sides are ${a},${b} and ${c}
+            </p>`);
+
+        S=(a+b+c)/2;
+        area=(S*(S-a)*(S-b)*(S-c))**0.5
+        area_using_pow=Math.pow(S*(S-a)*(S-b)*(S-c),1/2);
+
+        document.write(`Area using exponentiation operator ${area}<br>`);
+        document.write(`Area using power method ${area_using_pow}`);
+
+    </script>
+</head>

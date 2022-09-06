@@ -1,0 +1,19 @@
+<head>
+    <script>
+        //distance formula
+        // distance =  ((x2-x1)**2 +(y2-y1)**2)**1/2
+        //x1,x1=> x coordiantes (x1,x2) ex:(5,10); y1,y2 are y co-ordinates (y1,y2) ex: (15,25)
+        
+        //accepting x and y coordinates 
+
+        x1=parseInt(prompt("Enter x1"))
+        y1=parseInt(prompt("Enter y1"))
+        x2=parseInt(prompt("Enter x2"))
+        y2=parseInt(prompt("Enter y2"))
+
+        distance=Math.pow((Math.pow(x2-x1,2)+Math.pow(y2-y1,2)),1/2);
+        document.write(`distance between two points (${x1},${y1}) and (${x2},${y2}) is ${distance}`);
+
+    
+    </script>
+</head>

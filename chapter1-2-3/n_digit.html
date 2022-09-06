@@ -1,0 +1,13 @@
+<head>
+    <script>
+        //https://stackoverflow.com/questions/13955738/javascript-get-the-second-digit-from-a-number
+         
+        //nth place
+        number=parseInt(prompt("Enter Integer value"))
+        n=parseInt(prompt("Enter the nth place of digit you wish to print "));
+
+        digit=parseInt((number/Math.pow(10,n-1))%10);
+        document.write("The digit at "+n+ "th place of "+number+" is "+" "+digit );
+
+    </script>
+</head>
