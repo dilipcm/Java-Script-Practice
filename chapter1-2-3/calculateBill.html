@@ -1,0 +1,31 @@
+<head>
+    <script>
+
+        //generate Bill
+        qty=parseInt(prompt("Enter qty "));
+        val=parseInt(prompt("Enter value "));
+        discount=parseInt(prompt("Enter discount in % "));
+        tax=parseInt(prompt("Enter tax "));
+ 
+        amt=qty*val;
+        
+        discount_amt=(amt*discount)/100;
+        sub_total = amt-discount_amt;
+        tax_amt=(sub_total*tax)/100;
+        total_amt=sub_total+tax_amt;
+
+        document.write("*********************BILL DETAILS*******************");
+        document.write("<br>Quantity Sold:"+qty);
+        document.write("<br>Price per Product :"+val);
+        document.write("<br>Discount Rate:"+discount);
+        document.write("<br>Tax Rate:"+tax);
+        document.write("<br>*****************************************************")
+        document.write("<br>Amount:"+amt);
+        document.write("<br>Discount Price:"+"-"+discount_amt);
+        document.write("<br>*****************************************************")
+        document.write("<br>Sub Total:"+sub_total);
+        document.write("<br>Tax Amount:"+"+"+tax_amt);
+        document.write("<br>Total:"+total_amt);
+        document.write("<br> ************************THANK YOU**********************");
+    </script>
+</head>
