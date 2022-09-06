@@ -1,0 +1,30 @@
+<head>
+    <script>
+        //Implicit conversion
+
+        let str1="abc";
+        let str2="Abc";
+
+        document.write(`${str1} < ${str2} : ${str1<str2}<br>`);
+        document.write(`${str1} > ${str2} : ${str1>str2}`);
+
+        if(str1>str2){
+            document.write(`<br>Entered statements block because ${str1} > ${str2} implicitly evaluated to boolean value <span style="color:blue">${str1>str2}</span> using Boolean function`);
+        }
+
+        //Explicit Conversion
+
+        document.write(`Explicit Conversion :
+        <br> 
+        <br> 10 to boolean: ${Boolean(10)} 
+        <br>null to Boolean: ${Boolean(null)}
+        <br>undefined to Boolean ${Boolean(undefined)}
+        <br>object to boolean ${Boolean({})}
+        <br>object with values to boolean : ${Boolean({name:"raju"})}
+        <br> str '10' to Number :${Number('10')}
+        <br> float to interger ${parseInt(12.32433)}
+        <br>  Int  to float ${parseFloat(20).toFixed(2)} (toFixed() used because, In js all Numebers are floats)
+        `);
+
+    </script>
+</head>
